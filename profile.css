@@ -1,0 +1,43 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background-color: #FFF3C3;
+}
+
+header {
+  background-color: #FFF3C3;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+header .logo {
+  margin-top: 10px;
+}
+
+header .logo img {
+  display: block;
+  margin: 0 auto;
+}
+
+main {
+  padding: 20px;
+}
+
+main h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+#profile-info {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}

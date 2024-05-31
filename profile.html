@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Profile Dashboard</title>
+  <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+  <header>
+    <h1>Profile</h1>
+  </header>
+
+  <main>
+    <div class="logo">
+        <img src="logo.jpeg" alt="Logo" height="300px" width="350px">
+    </div>
+    <h2>User Information</h2>
+    <div id="profile-info"></div>
+  </main>
+
+  <script>
+    var firstName = localStorage.getItem('first-name');
+    var lastName = localStorage.getItem('last-name');
+    var email = localStorage.getItem('email');
+    var sex = localStorage.getItem('sex');
+    var supportReason = localStorage.getItem('support-reason');
+
+    var profileInfo = document.getElementById('profile-info');
+    profileInfo.innerHTML = `
+      <p><strong>First Name:</strong> ${firstName}</p>
+      <p><strong>Last Name:</strong> ${lastName}</p>
+      <p><strong>Email:</strong> ${email}</p>
+      <p><strong>Sex:</strong> ${sex}</p>
+      <p><strong>Why I support this campaign:</strong> ${supportReason}</p>`;
+  </script>
+</body>
+
